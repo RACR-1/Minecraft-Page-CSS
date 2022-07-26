@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: tahoma, arial, sans-serif;
+    
+}
+
+.principal {
+    width: 80%;
+    margin: auto;
+}
+
+
+.divider {
+    width: 100%;
+    margin: 30px 0px;
+    position: relative;
+}
+
+.sec-Top {
+
+    position: fixed;
+    
+    left: 0;
+    right: 0;
+    padding: 0%;
+    width: 70%;
+    box-sizing: border-box;
+    overflow: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.233);
+    background-size: contain;
+    background-repeat: repeat-x;
+    box-shadow: 5px 8px 13px 7px;
+    margin: 20px auto;
+    z-index:1;
+}
+
+.imagem {
+    clear: both;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    overflow: auto;
+
+}
+
+/* #img-imp{
+    
+    flex: none;
+    position: relative;
+    top: 100px;
+} */
+
+.img-topo {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+#img-imp {
+    flex: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+.second-Image {
+    background-image: url("./imagens/wood\ House.webp");
+    height: 260px;
+    background-size: contain contain;
+    background-position: center;
+}
+
+.first {
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    position: relative;
+    /*     background-image: url("./imagens/Bloco\ de\ Terra.jpg");
+    background-size: 50px;
+    background-repeat:repeat-x;
+    box-sizing: border-box; */
+    overflow: auto;
+
+
+}
+
+.text-content {
+    margin: auto;
+    width: 60%;
+    box-shadow: 10px 10px 10px 10px;
+    color: rgb(184, 184, 184)
+}
+
+.text-content h1 {
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    background-color: rgba(232, 232, 232, 0.242);
+    text-shadow: 2px 1px 4px black;
+    margin: 0px 110px;
+    color: rgb(133, 133, 133);
+}
+
+.text-content p {
+    letter-spacing: 2px;
+    text-indent: 30px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(232, 232, 232, 0.242);
+    text-shadow: 2px 1px 2px black;
+    color: rgb(133, 133, 133);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.back-Mine1 {
+    background-image: url("./imagens/PikPng.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.first img {
+    width: 100px;
+    height: 50px;
+    float: left;
+    display: block;
+    margin-left: 20px;
+}
+
+.first ul {
+    float: right;
+    margin: 0px;
+    margin-right: 0px;
+
+}
+
+.first li {
+    float: left;
+    margin: 0px;
+    list-style: none;
+    
+}
+
+.first a {
+    
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px 10px;
+    padding-bottom: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url();
+    transition: background-color 0.2s linear;
+
+}
+
+.first a:hover {
+    background-color: rgba(163, 163, 163, 0.744);
+    color: rgb(255, 255, 255);
+}
+
+#a-1:hover {
+    background-image: url("./imagens/stone.png");
+}
+
+#a-2:hover {
+    background-image: url("./imagens/Nether\ stone.png");
+}
+
+#a-3:hover {
+    background-image: url("./imagens/End\ stone.png");
+}
+
+.button-card {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    top: 104px;
+}
+
+.button-card:hover {
+    background-color: white;
+}
+
+.button-card-left {
+    position: absolute;
+    left: 180px;
+    background-image: url("./imagens/seta-esquerda.png");
+    background-size: contain;
+}
+
+.button-card-right {
+    position: absolute;
+    left: 990px;
+    background-image: url("./imagens/seta-direita.png");
+    background-size: contain;
+}
+
+.card-list {
+
+    margin: auto;
+    width: 720px
+        /* 60% */
+    ;
+    max-height: 480px;
+    display: flex;
+    overflow-x: hidden;
+    background-color: rgb(227, 227, 227);
+    align-content: center;
+    border-radius: 7px;
+    box-shadow: 6px 6px 10px 0px;
+    color: rgba(0, 0, 0, 0.5);
+    scroll-behavior: smooth;
+
+}
+
+/* .card-list::-webkit-scrollbar{
+    display: none;
+    } */
+
+.card-list:hover {}
+
+.card-list .card {
+    background-color: rgb(241, 241, 241);
+    flex: none;
+    width: 200PX;
+    height: auto
+        /* 200px */
+    ;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 2px 2px 4px;
+    transition: box-shadow .3s linear;
+    color: black;
+}
+
+.card-list .card:hover {
+    box-shadow: 10px 10px 10px 10px;
+}
+
+.card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.card .card-text {
+    line-height: 1.6;
+    margin:
+        /* 0px 0px */
+        4px
+        /* 0px */
+    ;
+
+}
+
+.card .photo-On-Card {
+    width: 180px;
+    height: 100px;
+    margin: auto 10px auto 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px 4px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pic-card-1 {
+    background-image: url("./imagens/whiter.png");
+}
+
+.pic-card-2 {
+    background-image: url("./imagens/fox.png");
+}
+
+.pic-card-3 {
+    background-image: url("./imagens/snow\ doll.png");
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+footer p {
+    font-size: larger;
+    padding: 20px 0px 0px 0px;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
